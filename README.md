@@ -157,20 +157,6 @@ repeated application of it — which makes stepping, auto-running and reset all 
 path.
 
 ---
-.devcontainer/
-```
-
-The interpreter is one pure function:
-
-```ts
-executeStep(prevState, parsedLines) => nextState
-```
-
-`state` is `{ pc, regs, mem, flags, error, halted }`. It has no side effects, so a run is just
-repeated application of it — which makes stepping, auto-running and reset all the same code
-path.
-
----
 
 ## Adding an instruction
 
